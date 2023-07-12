@@ -12,7 +12,7 @@ ScoreWriting.innerHTML = "4.5"
 ScoreReading.innerHTML = "3.5"
 ScoreListeting.innerHTML = "7.0"
 
-PhoneNumber.innerHTML = prompt("Phone Number");
+PhoneNumber.innerHTML = "";
 var Spliten = PhoneNumber.innerHTML.split('');
 
 if (PhoneNumber.innerHTML == ""){
