@@ -8,7 +8,7 @@ const PhoneNumber = document.getElementById("PhoneNumber")
 const OverScore = document.getElementById("OverAll")
 
 ScoreSpeaking.innerHTML = "7.5"
-ScoreWriting.innerHTML = "4.0"
+ScoreWriting.innerHTML = "4.5"
 ScoreReading.innerHTML = "3.5"
 ScoreListeting.innerHTML = "7.0"
 
