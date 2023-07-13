@@ -187,6 +187,135 @@ body{
     font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.ToCenterProgressBar{
+    width: 300px;
+    margin: 0 auto;
+}
+.progressBar{
+    width: 300px;
+    height: 141px;
+    background: rgb(240, 240, 235);
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.27);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.27);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.27);
+    border: 1px;
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 530px;
+    display: flex;
+    justify-content: center;
+}
+.iconOFTheme{
+    width: 45px;
+    height: 12px;
+    border: 3px solid gray;
+    position: relative;
+    top: 30px;
+    right: 10px;
+    box-shadow: 0px 4px 24px 25px rgba(0,0,0,0.22) inset;
+    -webkit-box-shadow: 0px 4px 24px 25px rgba(0,0,0,0.22) inset;
+    -moz-box-shadow: 0px 4px 24px 25px rgba(0,0,0,0.22) inset;
+}
+.iconOFTheme::after{
+    content: "";
+    width: 0.4px;
+    height: 60px;
+    background: #77797a;
+    border: 1px;
+    z-index: 10;
+    position: absolute;
+    right: 142px;
+    top: 33px;
+}
+.iconOFTheme::before{
+    content: "";
+    width: 0.4px;
+    height: 60px;
+    background: #77797a;
+    border: 1px;
+    z-index: 10;
+    position: absolute;
+    right: -118px;
+    top: 33px;
+}
+.iconOFTheme p{
+    font-family: "Classic";
+    position: relative;
+    right: -50px;
+    top: -3px;
+}
+.bars{
+    width: 260px;
+    height: 60px;
+    border: 1px;
+    position: absolute;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.linesOfBar{
+    width: 300px;
+    height: 0.4px;
+    background: #6c757d;
+    opacity: 0.4;
+}
+.dates{
+    width: 260px;
+    height: 15px;
+    border: 1px;
+    position: absolute;
+    top: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+.dates p{
+    font-family:"Classic";
+    font-size: 13px;
+}
+.ScoreShow p{
+    font-family: "Classic";
+    font-size: 10px;
+    position: relative;
+    right: 14px;
+}
+.startPoint , .endPoint{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: gray;
+    position: absolute;
+}
+.startPoint{
+    top: 3px;
+    right: 255px;
+    z-index: 10;
+}
+.endPoint{
+    top: 3px;
+    right: -1px;
+}
+.line{
+    width: 260px;
+    height: 3px;
+    background: #6c757d;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.oldResult{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+    border-radius: 10px;
+    background: rgb(240, 240, 235);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.27);
+
+}
 .mainCard{
     width: 300px;
     height: 700px;
@@ -197,7 +326,7 @@ body{
     border: 1px;
     margin: 0 auto;
     position: relative;
-    top: -38px;
+    top: 124px;
     border-radius: 10px;
 }
 .mainCard::after{
@@ -392,4 +521,51 @@ body{
     right: 30px;
 
     font-size: 16px !important;
+}
+
+
+.bloker{
+    width: 1500px;
+    height: 1230px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+
+    
+    opacity: 0;
+}
+.Warring{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background: #cfd2d5;
+    position: absolute;
+    top: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Warring p{
+    font-family: "Classic";
+    font-size: 20px;
+    text-shadow: #FC0 1px 0 10px;
+
+    animation-name: Warring;
+    animation-duration: 2s;
+    animation-iteration-count: 1000;
+}
+
+@keyframes Warring{
+    0%{
+        text-shadow: rgb(255, 0, 0) 10px 10px 10px;
+    }
+    50%{
+        text-shadow: rgb(255, 255, 255) 10px 0 50px;
+    }
+    100%{
+        text-shadow: rgb(255, 0, 0) 10px 10px 10px;
+    }
 }
